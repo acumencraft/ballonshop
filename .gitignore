@@ -1,0 +1,51 @@
+# .gitignore for ballonshop (Yii2 + Vue + Docker/DDEV)
+
+# Composer
+/vendor/
+composer.lock
+
+# Node
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Yii2
+/backend/runtime/
+/backend/web/assets/
+/frontend/runtime/
+/frontend/web/assets/
+/common/runtime/
+
+# Docker/DDEV
+.ddev/.global_config.yaml
+.ddev/db_snapshots/
+.ddev/logs/
+docker-compose.override.yaml
+
+# Env files
+.env
+*.env.local
+.env.*
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# MacOS/OS junk
+.DS_Store
+Thumbs.db
+
+# PHPUnit
+phpunit.xml
+phpunit.xml.dist
+
+# Logs
+/logs
+*.log
+
+# Mailcatcher/other
+/.mailcatcher/

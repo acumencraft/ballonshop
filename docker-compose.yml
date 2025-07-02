@@ -1,0 +1,20 @@
+version: '3.6'
+
+services:
+  mailcatcher:
+    image: schickling/mailcatcher
+    container_name: ${DDEV_SITENAME}_mailcatcher
+    ports:
+      - "8025:1080"
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: ${DDEV_SITENAME}_phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: db
+      PMA_PASSWORD: db
+    ports:
+      - "8081:80"
+    restart: unless-stopped
