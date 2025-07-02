@@ -1,5 +1,8 @@
 #!/usr/bin/env php
 <?php
+
+var_dump(getenv('DB_DSN'));
+exit;
 /**
  * Yii console bootstrap file.
  */
