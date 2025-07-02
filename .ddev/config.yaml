@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: ballonshop
+=======
+name: balloonshop
+>>>>>>> 31a0148b4e88e95acd4ad33b5216c68dddaf3e08
 type: php
 docroot: frontend/web
 php_version: "8.3"
